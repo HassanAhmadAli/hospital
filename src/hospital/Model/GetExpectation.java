@@ -1,4 +1,4 @@
-package Model;
+package hospital.Model;
 
 // performing the algorithm needed to achieve our goal
 

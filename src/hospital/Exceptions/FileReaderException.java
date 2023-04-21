@@ -1,4 +1,4 @@
-package Exceptions;
+package hospital.Exceptions;
 // import class exception
 import java.io.IOException;
 

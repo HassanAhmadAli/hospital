@@ -1,4 +1,4 @@
-package Exceptions;
+package hospital.Exceptions;
 
 // from ali.saeed
 public class PatientException extends Exception {

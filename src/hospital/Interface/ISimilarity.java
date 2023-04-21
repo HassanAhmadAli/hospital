@@ -1,5 +1,5 @@
-package Interface;
-import Model.Patient;
+package hospital.Interface;
+import hospital.Model.Patient;
 // organizing similarity -aka calcSimilarity-
 public interface ISimilarity {
     //a method to measure similarity -aka calcSimilarity-

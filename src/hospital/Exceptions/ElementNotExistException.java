@@ -1,4 +1,4 @@
-package Exceptions;
+package hospital.Exceptions;
 
 public class ElementNotExistException extends Exception {
     public ElementNotExistException() {

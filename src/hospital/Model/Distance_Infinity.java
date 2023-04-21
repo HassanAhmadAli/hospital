@@ -1,8 +1,8 @@
-package Model;
+package hospital.Model;
 
 import java.util.ArrayList;
 
-public class Distance_Infinity implements Interface.ISimilarity {
+public class Distance_Infinity implements hospital.Interface.ISimilarity {
     @Override
     public double calcSimilarity(Patient x, Patient y) {
         double res = 0.0;

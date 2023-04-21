@@ -1,4 +1,4 @@
-package FileHandler;
+package hospital.FileHandler;
 
 public class CSVPatientHandler {
 }

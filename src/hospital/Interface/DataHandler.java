@@ -1,4 +1,4 @@
-package Interface;
+package hospital.Interface;
 
 import java.util.ArrayList;
 // from ali.saeed
