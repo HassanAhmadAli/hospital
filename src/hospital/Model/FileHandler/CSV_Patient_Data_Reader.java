@@ -20,25 +20,19 @@ public class CSV_Patient_Data_Reader {
                 String[] strings = line.split(",");
                 if (isHeader) {
                     isHeader = false;
-                    if (strings.length == 8) {
-                        String[] Headers = new String[9];
-                        for (int i = 0; i < 8; i++) {
-                            Headers[i] = strings[i];
-                        }
-                        strings[8] = "isDanger";
-                        res.add(Headers);
-                    }
-                    if (strings.length == 9)
+                    if (strings.length == 7) {
                         res.add(strings);
-                    else
+                    } else
                         throw new ElementNotExistException();
                 } else {
-                    if (strings.length != 9) {
-                        throw new ElementNotExistException();
-                    } else {
+                    if (strings.length == 8) {
                         res.add(strings);
+                    } else {
+                        throw new ElementNotExistException();
                     }
                 }
+
+
             }
         } catch (
                 FileNotFoundException f) {
