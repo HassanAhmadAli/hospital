@@ -1,27 +1,33 @@
 package hospital.Model.FileHandler;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.*;
+import java.util.ArrayList;
 
 // performing operations needed to read data from a file and store it in an instance of History
 public class CSVFileRead {
-    public static void main(String[] args) {
+    public void read() throws IOException {
         String file = "example.csc";
         BufferedReader reader = null;
         String line = "";
+        var InputtedData = new ArrayList<ArrayList<String>>();
         try {
             reader = new BufferedReader(new FileReader(file));
             while ((line = reader.readLine()) != null) {
-                String[] row = line.split(",");
-                for (String index : row) {
-                    System.out.print("%-10s");
-                }
+                String[] rows = line.split(",");
+                ArrayList<String> rowData = new ArrayList<>();
+
+
                 System.out.println();
             }
-        } catch (Exception e) {
+        } catch (FileNotFoundException f) {
+            System.out.println();
+            f.printStackTrace();
+        } catch (SecurityException s) {
+            System.out.println("Security Exception: " + s);
 
         } finally {
-
+            assert reader != null;
+            reader.close();
         }
 
     }
