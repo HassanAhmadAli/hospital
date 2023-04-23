@@ -1,4 +1,4 @@
-package hospital.FileHandler;
+package hospital.Model.FileHandler;
 
 public class FilesInformationAnalyser {
 }

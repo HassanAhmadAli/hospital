@@ -1,4 +1,4 @@
-package hospital.FileHandler;
+package hospital.Model.FileHandler;
 // performing operations needed to read data from a file and store it in an instance of History
 public class CSVFileRead {
 

@@ -1,4 +1,6 @@
-package hospital.Model;
+package hospital.Model.Similarity;
+
+import hospital.Model.Patient;
 
 import java.util.ArrayList;
 
