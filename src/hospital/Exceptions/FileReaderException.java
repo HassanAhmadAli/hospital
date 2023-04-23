@@ -7,4 +7,5 @@ public class FileReaderException extends IOException {
     public FileReaderException(String message) {
         super(message);
     }
+    public FileReaderException(){super();}
 }

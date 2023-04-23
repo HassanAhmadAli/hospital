@@ -8,11 +8,10 @@ public class Distance_2 implements hospital.Interface.ISimilarity {
     @Override
     public double calcSimilarity(Patient x, Patient y) {
         double res = 0.0;
-        ArrayList<Double> x_list = x.getTestResult();
-        ArrayList<Double> y_list = y.getTestResult();
+        Double[] x_list = x.getTestResult();
+        Double[] y_list = y.getTestResult();
         for (int i = 0; i < 7; i++) {
-            double Diff = (x_list.get(i) * x_list.get(i)) + (y_list.get(i) * y_list.get(i));
-            res += Diff;
+            res += (x_list[i] * x_list[i]) + (y_list[i] * y_list[i]);
         }
         return Math.sqrt(res);
     }

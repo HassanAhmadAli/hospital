@@ -1,19 +1,18 @@
 package hospital.Model.Similarity;
 
 import hospital.Model.Patient;
-import java.util.ArrayList;
-
 public class Distance_Infinity implements hospital.Interface.ISimilarity {
     @Override
     public double calcSimilarity(Patient x, Patient y) {
         double res = 0.0;
-        ArrayList<Double> x_list = x.getTestResult();
-        ArrayList<Double> y_list = y.getTestResult();
+        Double[] x_list = x.getTestResult();
+        Double[] y_list = y.getTestResult();
+        double Diff = 0;
+
         for (int i = 0; i < 7; i++) {
-            double Diff = Math.abs(x_list.get(i) - y_list.get(i));
+            Diff = Math.abs(x_list[i] - y_list[i]);
             if (Diff > res) res = Diff;
         }
-
         return res;
     }
 }
